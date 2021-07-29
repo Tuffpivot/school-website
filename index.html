@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>school website</title>
+    <link rel="stylesheet" href="css/main.css">
+   
+</head> 
+
+<body>
+
+  <div class="topnav">
+         <a class="active" href="#"> MOOSE CREEK <br> INSTITUTE
+        </a>
+         <a class="logo" href=""> Home Page</a>
+         <a class="logo" href="../school website/pages/registration page.html"> Registration</a>
+          
+
+        <a class="logo" href="../school website/pages/gallery.html">Gallery</a>
+        <a class="logo" href="">Administration</a> 
+        <a class="logo" href="../school website/pages/about us.html">About Us</a>
+        <input type="text" placeholder="Search.."  name="search">
+        <button type="submit">search</button>
+
+        
+        </div>
+<nav>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="../school website/images/graduation.jpg" style="width:100%">
+          <div class="text">Graduating Class of 2021</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../school website/images/orientation.jpg" style="width:100%">
+          <div class="text">Orientation Week for New Students</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../school website/images/COVID.jpg" style="width:100%">
+          <div class="text">Mask Up Stay Safe</div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</nav>
+<script type="text/javascript">
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+      
+      <div class="hero-video">
+         <video autoplay muted controls loop><source src="../school website/images/bodyimage.mp4"  type="video/mp4" repeat></video>
+        <div class="hero-text">
+          <h1>At moose creek our students have the freedom to chose <br> their academic journey</h1>
+          
+          <button >Read More</button>
+        </div>
+      </div>  
+
+</div>
+<div class="navbar">
+  <a href="#news">E-mail <br>EMAIL: INFO@MOOSCREEKINSTITUTE.EDU</a>
+  <a href="#contact">Contact <BR>13-47, LOKONGA CRUISE, BANGATON CLOSE,  RIVEN, SAO TOME</BR></a>
+  <a href="#">CONTACT NUMBER: <br>+2173333534</a>
+</div>
+ 
+</body>
